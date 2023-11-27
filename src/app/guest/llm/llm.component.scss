@@ -1,0 +1,275 @@
+.jumbotron {
+    padding: 5% 0;
+}
+.is--llm_bar_review {
+    background: transparent url(../../../assets/images/llmbarreview.jpg) top center no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+.has--padding_ten {
+    padding: 10% 15px;
+}
+@media screen and (min-width: 769px)
+{
+    .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eeeeee;
+}
+
+@media (min-width: 992px)
+{
+    .col-md-7 {
+        width: 58.33333%;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron h1, .jumbotron .h1 {
+        font-size: 48px !important;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron h2, .jumbotron .h2 {
+        font-size: 48px !important;
+        text-align: left;
+    }
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.is--white_text h1, .is--white_text h2 {
+    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+}
+.is--white_text h1, .is--white_text h2, .is--white_text h3, .is--white_text h4, .is--white_text h5, .is--white_text h6, .is--white_text p, .is--white_text small {
+    color: #f2f9ff !important;
+}
+@media screen and (min-width: 769px)
+{
+    .jumbotron h1, .jumbotron .h1 {
+        font-size: 72px;
+    }
+}
+.jumbotron h1, .jumbotron .h1 {
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500 !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding-bottom: 10px;
+}
+h1, .h1 {
+    font-size: 41px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.35;
+    color: #333333;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron p {
+        text-align: left;
+    }
+}
+.jumbotron p {
+    text-align: center;
+}
+
+.is--white_text h1, .is--white_text h2, .is--white_text h3, .is--white_text h4, .is--white_text h5, .is--white_text h6, .is--white_text p, .is--white_text small {
+    color: #f2f9ff !important;
+}
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 200;
+}
+p {
+    font-weight: 300 !important;
+}
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding-bottom: 10px;
+}
+p {
+    margin: 0 0 13px;
+}
+
+
+.btn-warning-reversed {
+    background-color: #FFF;
+    border: 1px solid #F89F02;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    color: #F89F02;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.65;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {
+    color: #2B7FC4;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+
+
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron h1, .jumbotron .h1 {
+        font-size: 48px !important;
+        text-align: left;
+    }
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+.is--white_text h1, .is--white_text h2 {
+    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+}
+.is--white_text h1, .is--white_text h2, .is--white_text h3, .is--white_text h4, .is--white_text h5, .is--white_text h6, .is--white_text p, .is--white_text small {
+    color: #f2f9ff !important;
+}
+@media screen and (min-width: 769px)
+{
+    .jumbotron h1, .jumbotron .h1 {
+        font-size: 72px;
+    }
+}
+.jumbotron h1, .jumbotron .h1 {
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500 !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding-bottom: 10px;
+}
+h1, .h1 {
+    font-size: 41px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.35;
+    color: #333333;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron h2, .jumbotron h3, .jumbotron h4 {
+        text-align: left;
+    }
+}
+
+.jumbotron h2, .jumbotron h3, .jumbotron h4 {
+    text-align: center;
+}
+.is--white_text h1, .is--white_text h2 {
+    text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.3);
+}
+.is--white_text h1, .is--white_text h2, .is--white_text h3, .is--white_text h4, .is--white_text h5, .is--white_text h6, .is--white_text p, .is--white_text small {
+    color: #f2f9ff !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500 !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding-bottom: 10px;
+}
+h2, .h2 {
+    font-size: 34px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.35;
+    color: #333333;
+}

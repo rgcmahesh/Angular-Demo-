@@ -1,0 +1,279 @@
+.jumbotron.is--med_jumbo {
+    padding: 10% 0;
+}
+.jumbotron {
+    padding: 5% 0;
+}
+
+.is--site_landing_pass {
+    background: transparent url('../../../assets/images/masthead-pass-rates.png') top center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    
+}
+
+.jumbotron.is--med_jumbo {
+    padding: 10% 0;
+}
+.jumbotron {
+    padding: 5% 0;
+}
+
+@media screen and (min-width: 769px) {
+    .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eeeeee;
+}
+
+.jumbotron .container {
+    max-width: 100%;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.btn.btn-lg, .btn-course_schedule, .btn.btn-group-lg > .btn {
+    font-size: 16px;
+}
+.btn.btn-primary {
+    border-color: #2671af;
+    background-color: #2B7FC4;
+}
+.btn.btn-lg, .btn.btn-group-lg > .btn {
+    font-size: 18px;
+    font-weight: 500 !important;
+}
+.white {
+    color: white;
+}
+.tab {
+    flex: 1 0 50%;
+    border: 1px solid #eee;
+    padding: 0.8em;
+    color: #488EDE;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.btn {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 20px;
+    line-height: 1.33;
+    border-radius: 4px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #2B7FC4;
+    border-color: #2671af;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.65;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {
+    color: #2B7FC4;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+
+.btn.btn-lg, .btn-course_schedule, .btn.btn-group-lg > .btn {
+    font-size: 16px;
+}
+.btn.btn-primary {
+    border-color: #2671af;
+    background-color: #2B7FC4;
+}
+.btn.btn-lg, .btn.btn-group-lg > .btn {
+    font-size: 18px;
+    font-weight: 500 !important;
+}
+.white {
+    color: white;
+}
+.tab {
+    flex: 1 0 50%;
+    border: 1px solid #eee;
+    padding: 0.8em;
+    color: #488EDE;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.btn {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 20px;
+    line-height: 1.33;
+    border-radius: 4px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #2B7FC4;
+    border-color: #2671af;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.65;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a {
+    color: #2B7FC4;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron h1, .jumbotron .h1 {
+        font-size: 48px !important;
+        text-align: left;
+    }
+}
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+@media screen and (min-width: 769px){
+    .jumbotron h1, .jumbotron .h1 {
+        font-size: 72px;
+    }
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500 !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding-bottom: 10px;
+}
+h1, .h1 {
+    font-size: 41px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.35;
+    color: #333333;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+
+@media screen and (min-width: 769px)
+{
+    .jumbotron h2, .jumbotron h3, .jumbotron h4 {
+        text-align: left;
+    }
+}
+.jumbotron h2, .jumbotron h3, .jumbotron h4 {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500 !important;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding-bottom: 10px;
+}
+h2, .h2 {
+    font-size: 34px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.35;
+    color: #333333;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+b, strong {
+    font-weight: bold;
+}

@@ -1,0 +1,82 @@
+<div class="container-fluid">
+    <!-- Card stats -->
+    <div class="row g-6 mb-20">
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card shadow border-0">
+                
+            </div>
+        </div>
+    </div>
+    <div class="card shadow border-0 mb-7">
+        <div class="card-header">
+            <h5 class="mb-0">Question</h5>
+            <button class="btn btn-info  btn-sm float-end text-white" [routerLink]="['./create']"> <i class="fa fa-plus"></i> Add Question</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover table-nowrap">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Question</th>
+                        <th scope="col">Option1</th>
+                        <th scope="col">Option2</th>
+                        <th scope="col">Option3</th>
+                        <th scope="col">Option4</th>
+                        <th scope="col">Answer</th>
+                        <th scope="col">Active</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let question of questions">
+                        <td>
+                            {{question.questionText}}
+                        </td>
+                        <td>
+                            {{question.option1}}
+                        </td>
+                        <td>
+                            {{question.option2}}
+                        </td>
+                        <td>
+                            {{question.option3}}
+                        </td>
+                        <td>
+                            {{question.option4}}
+                        </td>
+                        <td>
+                            {{question.answer}}
+                        </td>
+                        <!-- <td>
+                            <img alt="..." src="https://preview.webpixels.io/web/img/other/logos/logo-1.png" class="avatar avatar-xs rounded-circle me-2">
+                            <a class="text-heading font-semibold" href="#">
+                                Dribbble
+                            </a>
+                        </td> -->
+                        <td>
+                            <span class="badge badge-lg badge-dot">
+                                <i class="bg-success"></i>
+                            </span>
+                        </td>
+                        <td class="text-end">
+                            <!-- <a href="#" class="btn btn-sm btn-neutral">View</a> -->
+                            <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover" routerLink='./edit/{{question.questionId}}'>
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover" (click)="questionDelete(question.questionId)">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="card-footer border-0 py-5">
+            <span class="text-muted text-sm">Showing 10 items out of 250 results found</span>
+        </div> -->
+    </div>
+</div>
+
+<!-- loading -->
+<div class="cssload-container" *ngIf="!loading">
+    <div class="cssload-speeding-wheel"></div>
+</div>

@@ -1,0 +1,77 @@
+<div class="container has--padding_five">
+
+    <div class="row">
+      <div class="col-xs-12">
+          <div class="tabs-container">
+              <a href="/sign_up" class="enroll-tab tab text-center sign-up">Sign Up</a>
+              <a href="/sign_in" class="enroll-tab tab text-center sign-in">Sign In</a>
+          </div>
+          <form name="registration_user" [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="simple_form sign_up well" novalidate="novalidate">
+            <div class="col-md-12 text-center">
+                <img alt="Themis Bar Review logo" class="hidden-sm hidden-xs img-circle" src="../../assets/images/section-11.jpg" width="200">
+                <h1>Create your account today!</h1>
+            </div>
+            <div class="enroll-form">
+                <div class="form-group enroll-half">
+                    <input type="text" formControlName="firstName" class="string optional form-control" placeholder="First Name">
+                    <div *ngIf="submitted && formControl?.firstName?.errors" class="text-danger mr-2">
+                      <div *ngIf="formControl.firstName.errors?.required">First Name is required.</div>
+                    </div> 
+                </div>
+    
+                <div class="form-group enroll-half">
+                    <input type="text" formControlName="lastName" class="string optional form-control" placeholder="Last Name">
+                    <div *ngIf="submitted && formControl?.lastName?.errors" class="text-danger mr-2">
+                      <div *ngIf="formControl.lastName.errors?.required">Last Name is required.</div>
+                    </div>
+                </div>
+    
+    
+                <div class="form-group enroll-full">
+                  <div class="email optional lead_email">
+                    <input type="email" formControlName="email" placeholder="Email Address" class="string optional form-control">
+                    <div *ngIf="submitted && formControl?.email?.errors" class="text-danger mr-2">
+                      <div *ngIf="formControl.email.errors?.email">Email must be valid.</div>
+                      <div *ngIf="formControl.email.errors?.required">Email is required.</div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="form-group enroll-half">
+                    <input type="password" formControlName="password" placeholder="Password" class="string optional enroll-pass">
+                    <div *ngIf="submitted && formControl?.password?.errors" class="text-danger mr-2">
+                      <div *ngIf="formControl.password.errors?.required">Password is required.</div>
+                      <div *ngIf="!formControl.password.errors?.required && formControl.password.errors?.strong">Stong Password is required.</div>
+                    </div>
+                </div>
+    
+                <div class="form-group enroll-half">
+                    <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" class="string optional enroll-pass">
+                    <div *ngIf="submitted && formControl?.confirmPassword?.errors || signUpForm.errors?.PasswordNoMatch" class="text-danger mr-2">
+                      <div *ngIf="formControl.confirmPassword.errors?.required && !signUpForm.errors?.PasswordNoMatch">Confirm Password is required.</div>
+                      <div *ngIf="!formControl.confirmPassword.errors?.required && signUpForm.errors?.PasswordNoMatch">
+                        Passwords did not match
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group enroll-full">
+                    <div id="g-verify" style="width: 305px; margin-left: auto; margin-right: auto;"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-gbpanz4hqsba" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeSa6oUAAAAAEBtCqtkhonB4-A_-fAtGm7WKLNl&amp;co=aHR0cDovL2Rldi50aGVtaXNiYXIuY29tOjgwODA.&amp;hl=en&amp;v=lLirU0na9roYU3wDDisGJEVT&amp;size=normal&amp;cb=iqpnywcez2ta"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="registration_user_save" name="" class="btn btn-primary btn-lg enroll-btn" [disabled]="loading">SIGN UP</button>
+                </div>
+    
+            </div>
+            <hr>
+            <div class="text-center">
+              <span class="small">By signing up you agree to Themis Bar's <a href="/terms" target="_blank">Terms of Service</a></span>
+            </div>
+          <input type="hidden" id="registration_user__token" name="registration_user[_token]" value="yVfJM1wVcnPYp0wP0EEp9lM8KNfklnSHHQWlo5UIW_E"></form>
+      </div>
+    </div>
+</div>
+
+<!-- loading -->
+<div class="cssload-container" *ngIf="loading">
+  <div class="cssload-speeding-wheel"></div>
+</div>

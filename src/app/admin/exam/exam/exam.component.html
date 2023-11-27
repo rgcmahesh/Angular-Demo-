@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <!-- Card stats -->
+    <div class="row g-6 mb-20">
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card shadow border-0">
+                
+            </div>
+        </div>
+    </div>
+    <div class="card shadow border-0 mb-7">
+        <div class="card-header">
+            <h5 class="mb-0">Exams</h5>
+            <button class="btn btn-info  btn-sm float-end text-white" [routerLink]="['./create']"> <i class="fa fa-plus"></i> Add Exam</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover table-nowrap">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Exam Name</th>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Time</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let exam of exams">
+                        <td>
+                            {{exam.examName}}
+                        </td>
+                        <td>
+                            {{exam?.course?.courseName}}
+                        </td>
+                        <td>
+                            {{exam.durationMinutes}}
+                        </td>
+                        <td class="text-end">
+                            <!-- <a href="#" class="btn btn-sm btn-neutral">View</a> -->
+                            <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover" routerLink='./edit/{{exam.examId}}'>
+                                <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover" (click)="examDelete(exam.examId)">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- loading -->
+<div class="cssload-container" *ngIf="!loading">
+    <div class="cssload-speeding-wheel"></div>
+</div>

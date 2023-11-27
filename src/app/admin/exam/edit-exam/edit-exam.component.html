@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <!-- Card stats -->
+    <div class="row g-6 mb-20">
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card shadow border-0">
+                <!-- Your existing content goes here -->
+            </div>
+        </div>
+    </div>
+    <div class="card shadow border-0 mb-7">
+        <div class="card-header">
+            <h5 class="mb-0">Edit Exam</h5>
+        </div>
+        
+        <!-- Add a form to collect student information -->
+        <form [formGroup]="examForm" (ngSubmit)="onSubmit()">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="examName" class="form-label">Exam Name</label>
+                    <input type="text" formControlName="examName" class="string optional form-control" placeholder="Exam Name">
+                    <div *ngIf="submitted && formControl?.examName?.errors" class="text-danger mr-2">
+                      <div *ngIf="formControl.examName.errors?.required">Exam Name is required.</div>
+                    </div> 
+                </div>
+                <div class="mb-3">
+                    <label for="durationMinutes" class="form-label">Time</label>
+                    <input type="number" formControlName="durationMinutes" class="string optional form-control" placeholder="Duration In Minutes">
+                    <div *ngIf="submitted && formControl?.durationMinutes?.errors" class="text-danger mr-2">
+                      <div *ngIf="formControl.durationMinutes.errors?.required">Time is required.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="courseId" class="form-label">Course</label>
+                    <select formControlName="courseId" class="string optional form-control" [(ngModel)]="exam.courseId">
+                        <option disabled>Select Course</option>  
+                        <option *ngFor="let course of courses" [value]="course.courseId" >{{course.courseName}}</option>  
+                    </select>
+                    <div *ngIf="submitted && formControl?.courseId?.errors" class="text-danger mr-2">
+                      <div *ngIf="formControl.courseId.errors?.required">Course is required.</div>
+                    </div>
+                </div>
+                <!-- Add more input fields as needed -->
+  
+                <!-- Align the buttons horizontally using a div -->
+                <div class="mb-3 d-flex justify-content-between">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-secondary" routerLink="/admin/exam">Back</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div>
+  <!-- loading -->
+  <div class="cssload-container" *ngIf="loading">
+      <div class="cssload-speeding-wheel"></div>
+  </div>

@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <!-- Card stats -->
+  <div class="row g-6 mb-20">
+      <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card shadow border-0">
+              <!-- Your existing content goes here -->
+          </div>
+      </div>
+  </div>
+  <div class="card shadow border-0 mb-7">
+      <div class="card-header">
+          <h5 class="mb-0">Add Faculty</h5>
+      </div>
+      
+      <!-- Add a form to collect student information -->
+      <form [formGroup]="facultyForm" (ngSubmit)="onSubmit()" >
+          <div class="card-body">
+              <div class="mb-3">
+                  <label for="studentName" class="form-label">First Name</label>
+                  <input type="text" formControlName="firstName" class="string optional form-control" placeholder="First Name">
+                  <div *ngIf="submitted && formControl?.firstName?.errors" class="text-danger mr-2">
+                    <div *ngIf="formControl.firstName.errors?.required">First Name is required.</div>
+                  </div> 
+              </div>
+              <div class="mb-3">
+                  <label for="studentID" class="form-label">Last Name</label>
+                  <input type="text" formControlName="lastName" class="string optional form-control" placeholder="Last Name">
+                  <div *ngIf="submitted && formControl?.lastName?.errors" class="text-danger mr-2">
+                    <div *ngIf="formControl.lastName.errors?.required">Last Name is required.</div>
+                  </div>
+              </div>
+              <div class="mb-3">
+                <label for="studentID" class="form-label">Email</label>
+                <input type="email" formControlName="email" placeholder="Email Address" class="string optional form-control">
+                <div *ngIf="submitted && formControl?.email?.errors" class="text-danger mr-2">
+                  <div *ngIf="formControl.email.errors?.email">Email must be valid.</div>
+                  <div *ngIf="formControl.email.errors?.required">Email is required.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="studentID" class="form-label">Password</label>
+                <input type="password" formControlName="password" placeholder="Password" class="string optional form-control">
+                <div *ngIf="submitted && formControl?.password?.errors" class="text-danger mr-2">
+                  <div *ngIf="formControl.password.errors?.required">Password is required.</div>
+                  <div *ngIf="!formControl.password.errors?.required && formControl.password.errors?.strong">Stong Password is required.</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="studentID" class="form-label">Confirm Password</label>
+                <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" class="string optional form-control">
+                <div *ngIf="submitted && formControl?.confirmPassword?.errors || facultyForm.errors?.PasswordNoMatch" class="text-danger mr-2">
+                  <div *ngIf="formControl.confirmPassword.errors?.required && !facultyForm.errors?.PasswordNoMatch">Confirm Password is required.</div>
+                  <div *ngIf="!formControl.confirmPassword.errors?.required && facultyForm.errors?.PasswordNoMatch">
+                    Passwords did not match
+                  </div>
+                </div>
+              </div>
+              <!-- Add more input fields as needed -->
+
+              <!-- Align the buttons horizontally using a div -->
+              <div class="mb-3 d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary" routerLink="/admin/faculty">Back</button>
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+<!-- loading -->
+<div class="cssload-container" *ngIf="loading">
+    <div class="cssload-speeding-wheel"></div>
+</div>

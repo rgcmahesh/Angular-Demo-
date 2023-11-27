@@ -1,0 +1,55 @@
+<div class="container has--padding_five" *ngIf="isInitialized">
+
+  <div class="row">
+    <div class="col-xs-12">
+        <div class="tabs-container">
+            <a href="/sign_up" class="enroll-tab tab text-center sign-up">Sign Up</a>
+            <a href="/sign_in" class="enroll-tab tab text-center sign-in">Sign In</a>
+        </div>
+      <form  class="simple_form well" id="hero_unit_new_lead" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <div class="enroll-form">
+
+        <div class="row">
+          <div class="text-center">
+            <img class="img-circle hidden-sm hidden-xs" width="200" src="../../assets/images/section-12.jpg" alt="Themis best in class customer support">
+            <h1>Sign In</h1>
+          </div>
+        </div>
+        <div class="form-group enroll-full">
+            <input class="string email optional form-control" id="user_email" formControlName="email"  placeholder="Your Email Address" size="60" type="email">
+            <div *ngIf="submitted && formControl?.email?.errors" class="text-danger mr-2">
+              <div *ngIf="formControl.email.errors?.email">Email must be valid.</div>
+              <div *ngIf="formControl.email.errors?.required">Email is required.</div>
+            </div>
+          </div>
+
+        <div class="form-group enroll-full">
+            <input class="password optional form-control" id="user_password"  formControlName="password"  placeholder="Your Password" size="60" type="password">
+            <div *ngIf="submitted && formControl.password.errors" class="text-danger">
+              <div *ngIf="formControl.password.errors.required">Password is required.</div>
+              <div *ngIf="formControl.password.errors.pattern">
+                <!-- <h3>Password must contain the following:</h3> -->
+                <ul>
+                  <li>Password should be alphanumeric</li>
+                  <li>A letter of the password should be capital</li>
+                  <li>Password must contain a special character (@, $, !, &, etc)</li>
+                  <li>Password length must be greater than 7 characters</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <div class="form-group enroll-btn signin-btn">
+          <button class="btn btn-lg" id="login" name="commit" type="submit" value="Sign In" [disabled]="loading">Sign In</button>
+        </div>
+        <hr>
+        <div class="enroll-full small text-center"><a href="">Forgot your password?</a></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- loading -->
+<div class="cssload-container" *ngIf="loading">
+  <div class="cssload-speeding-wheel"></div>
+</div>

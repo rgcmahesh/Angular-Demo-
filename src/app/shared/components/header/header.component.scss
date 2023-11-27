@@ -1,0 +1,93 @@
+.header {
+    background-color: #FFFFFF;
+    border-color: #eeeeee;
+}
+
+nav {
+    background-color: #FFFFFF !important;
+    border-color: #eeeeee !important;
+}
+
+.navbar-default .navbar-brand {
+    color: #2B7FC4;
+}
+
+.navbar-brand {
+    font-weight: 400;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 22px 15px;
+    font-size: 20px;
+    line-height: 26px;
+    height: 70px;
+}
+
+a {
+    color: #2B7FC4;
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    border-color: #2671af;
+    background-color: #2B7FC4;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #F89F02;
+    border-color: #e99502;
+}
+
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 100%;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.btn {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 769px)
+{
+    .navbar-btn {
+        margin-top: 16.5px;
+        margin-bottom: 16.5px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.65;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+// @media screen and (min-width: 769px)
+.navbar-right li:last-child form {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.navbar-right li:last-child form {
+    margin-right: 0;
+    margin-left: 0;
+}
