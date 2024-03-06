@@ -58,9 +58,8 @@ export class SignInComponent implements OnInit {
         }, 
         error: err => {
           this.loading = false;
-          this.toast.error({detail:"ERROR",summary: err?.error.message, sticky:true});
+          this.toast.error({detail:"ERROR",summary: 'Invalid email or password', sticky:true});
             this.errors = err?.error.message;
-            console.log(err);
         }
       });
     }
