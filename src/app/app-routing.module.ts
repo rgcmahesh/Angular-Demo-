@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 // import { SignUpComponent } from './shared/components/sign-up/sign-up.component'
 import { AuthGuard } from './shared/guards/auth.guard'
 import { hasRoleGuard } from './shared/guards/has-role.guard'
+import { PagenotfoundComponent } from './shared/components/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   { 
@@ -30,6 +31,12 @@ const routes: Routes = [
     },
     loadChildren: () => import('./admin/admin-routing.module')
     .then(mod => mod.AdminRoutingModule)
+  },
+  {
+    path: 'page-not-found', component: PagenotfoundComponent
+  },
+  {
+    path: '**', redirectTo: '/page-not-found'
   }
 
 ];

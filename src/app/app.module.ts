@@ -43,7 +43,8 @@ import { EditExamComponent } from './admin/exam/edit-exam/edit-exam.component';
 import { QuestionComponent } from './admin/questions/question/question.component';
 import { AddQuestionComponent } from './admin/questions/add-question/add-question.component';
 import { EditQuestionComponent } from './admin/questions/edit-question/edit-question.component';
-import { LearnerExamComponent } from '../app/learner/exams/learner-exam/learner-exam.component'
+import { LearnerExamComponent } from '../app/learner/exams/learner-exam/learner-exam.component';
+import { PagenotfoundComponent } from './shared/components/pagenotfound/pagenotfound.component'
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { LearnerExamComponent } from '../app/learner/exams/learner-exam/learner-
     QuestionComponent,
     AddQuestionComponent,
     EditQuestionComponent,
-    LearnerExamComponent
+    LearnerExamComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

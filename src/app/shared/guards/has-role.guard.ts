@@ -24,7 +24,7 @@ export class hasRoleGuard  {
     const isAuthorized = (this.authService.getUserRole() == route.data.role) || (this.authService.getUserRole() == 'faculty');
 
     if (!isAuthorized) {
-      this.toast.error({detail:"ERROR",summary: "Authorized Action", sticky:true});
+      this.toast.error({detail:"ERROR",summary: "Unauthorized Action", sticky:true});
       this.router.navigate(['/']);
       return false;
 

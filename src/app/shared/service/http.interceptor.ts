@@ -31,6 +31,13 @@ export class HttpInterceptorService implements HttpInterceptor {
             //handle
             //return this.handleUnAuthorizedError(request,next);
           }
+          if(err.status === 404){
+            localStorage.clear();
+            this.toast.error({detail:"ERROR",summary: "Page Not Found", sticky:true});
+            this.router.navigate(['page-not-found'])
+            //handle
+            //return this.handleUnAuthorizedError(request,next);
+          }
         }
         throw err;
       })
